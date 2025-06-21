@@ -2,7 +2,7 @@
   "name": "module-8-summative-assessment",
   "version": "1.0.0",
   "description": "DOM manipulation and user behavior simulation with testing",
-  "main": "src/index.js",
+  "main": "src/app.js",
   "scripts": {
     "start": "open public/index.html",
     "test": "jest"
