@@ -5,11 +5,13 @@
 async function fetchDefinition(word) {
     try {
         const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
-        const wordData = await response.json();
-
-        showDefinition(wordData); // call function after fetch
+        
+        if (!response.ok) throw new Error("Word not found");
+        return response.json();
+        
     } catch (error) {
         console.error("Error fetching the dictionary data", error);
+        throw error;
     }
 }
 
@@ -21,9 +23,13 @@ async function fetchDefinition(word) {
 // display pronounciation, definitions, synonyms
 
 function showDefinition(word) {
-    
+
 }
 
 // provide audio playback for pronounciation
 
 
+export { 
+    fetchDefinition,
+    showDefinition, 
+};
