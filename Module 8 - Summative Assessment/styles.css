@@ -1,0 +1,28 @@
+/* styles.css */
+body {
+    font-family: sans-serif;
+    padding: 1rem;
+    background: #f9f9f9;
+}
+
+/* styles for search bar */
+#search-form {
+    padding: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* styling for results section */
+#definition-container {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+#error-message {
+    color: red;
+    margin-top: 1rem;
+}

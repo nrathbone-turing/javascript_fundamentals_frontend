@@ -1,0 +1,20 @@
+{
+  "name": "module-8-summative-assessment",
+  "version": "1.0.0",
+  "description": "DOM manipulation and user behavior simulation with testing",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "open public/index.html",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Nick Rathbone",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jsdom": "^24.0.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  }
+}
