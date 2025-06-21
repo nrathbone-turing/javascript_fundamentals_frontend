@@ -1,4 +1,8 @@
-import { fetchDefinition} from "../src/index.js";
+// logic unit tests (fetchDefinition, string formatting, error handling, etc.)
+
+import { 
+    fetchDefinition, showDefinition
+} from "../src/index.js";
 
 // Initialize JSDOM
 const dom = new JSDOM(html, {
@@ -8,6 +12,7 @@ const dom = new JSDOM(html, {
 
 global.fetch = jest.fn(); // mock the global fetch
 
+// clear the mocked fetch data before each test
 beforeEach(() => {
     fetch.mockClear();
 });

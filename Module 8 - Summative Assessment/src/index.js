@@ -14,22 +14,32 @@ async function fetchDefinition(word) {
         throw error;
     }
 }
+// parsing and displaying fetched data
+// display pronounciation, definitions, synonyms in the DOM
+
+function showDefinition(data) {
+    const container = document.getElementById("definition-container");
+    const entry = data[0];
+    const wordElement = document.getElementById("word");
+    const definitionElement = document.getElementById("definition");
+    // not sure if i need separate objects for the key/value pairs within the definition object separately
+    // const pronounciationElement = document.getElementById("pronounciation");
+    // const synonymElement = document.getElementById("synonym");
+
+    wordElement.textContent = entry.word
+    definitionElement.textContent = entry.meanings[0].definitions.definition
+    // pronounciationElement.textContent = entry.phonetics[0].text
+    // synonymElement.textContent = entry.meanings[0].definitions.synonyms
 
 
-// search functionality
+    // provide audio playback for pronounciation if available
+    const audioPlayback = document.getElementById("audio-playback")
+    audioplayback.textContent = entry.phonetics.audio
 
-
-
-// display pronounciation, definitions, synonyms
-
-function showDefinition(word) {
-
+    container.classList.remove("hidden");
 }
-
-// provide audio playback for pronounciation
-
 
 export { 
     fetchDefinition,
-    showDefinition, 
+    showDefinition,
 };

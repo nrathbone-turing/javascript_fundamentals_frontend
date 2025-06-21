@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./style.css">
         <script type="module" defer src="./src/app.js"></script>
         <title>Wordly Dictionary</title>
     </head>
@@ -20,7 +20,10 @@
             <section id="definition-container" class="hidden">
                 <!-- dynamic content placeholder elements -->
                 <p id="word"></p>
-                <p id="definition"></p>
+                <p id="definition">
+                    <ul id="pronounciation"></ul>
+                    <ul id="synonym"></ul>
+                </p>
                 <button type="button" id="audio-playback"></button>
             </section>
             
