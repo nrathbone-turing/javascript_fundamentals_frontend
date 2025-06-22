@@ -1,5 +1,5 @@
 {
-  "name": "module-8-summative-assessment",
+  "name": "wordly-dictionary-app",
   "version": "1.0.0",
   "description": "DOM manipulation and user behavior simulation with testing",
   "main": "src/app.js",
@@ -12,6 +12,7 @@
   "license": "MIT",
   "devDependencies": {
     "jest": "^29.7.0",
+    "jest-environment-jsdom": "^30.0.2",
     "jsdom": "^24.0.0"
   },
   "jest": {

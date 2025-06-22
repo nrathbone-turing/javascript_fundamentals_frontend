@@ -81,7 +81,7 @@ function showDefinition(data) {
     container.classList.remove("hidden");
 }
 
-export { 
-    fetchDefinition,
-    showDefinition,
+module.exports = {
+  fetchDefinition,
+  showDefinition,
 };

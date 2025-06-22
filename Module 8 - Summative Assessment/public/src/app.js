@@ -1,6 +1,7 @@
 // app.js
 //runner file for the app
-import { fetchDefinition, showDefinition } from './index.js';
+const { fetchDefinition, showDefinition } = require('./index.js');
+
 
 // event listeners to handle form submission, user actions, and errors
 document.addEventListener("DOMContentLoaded", () => {
