@@ -1,0 +1,12 @@
+{
+  "name": "technical-lesson-dom-manipulation",
+  "version": "1.0.0",
+  "description": " Technical Lesson Dom Manipulation",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "flatironschool",
+  "license": "Included in Repo",
+  "devDependencies": {
+  }
+}

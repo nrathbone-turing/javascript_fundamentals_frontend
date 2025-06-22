@@ -1,0 +1,21 @@
+{
+  "name": "wordly-dictionary-app",
+  "version": "1.0.0",
+  "description": "DOM manipulation and user behavior simulation with testing",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "open public/index.html",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Nick Rathbone",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^30.0.2",
+    "jsdom": "^24.0.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  }
+}
