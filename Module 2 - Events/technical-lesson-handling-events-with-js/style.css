@@ -1,0 +1,17 @@
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.dodger {
+  width: 40px;
+  height: 40px;
+  background-color: #007BFF;
+  position: absolute;
+  left: 180px;
+  bottom: 180px;
+}

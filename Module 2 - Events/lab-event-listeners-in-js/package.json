@@ -1,0 +1,22 @@
+{
+  "name": "lab-event-listeners-in-js",
+  "version": "1.0.0",
+  "description": "A lab on handling events with JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Louis Medina",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "jest": "^28.1.3",
+    "jest-environment-jsdom": "^30.0.2",
+    "jsdom": "^22.1.0",
+    "mocha-multi": "^1.1.3"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  }
+}

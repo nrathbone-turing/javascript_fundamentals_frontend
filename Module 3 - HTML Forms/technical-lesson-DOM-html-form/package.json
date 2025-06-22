@@ -1,0 +1,12 @@
+{
+  "name": "template-technical-lesson",
+  "version": "1.0.0",
+  "description": "Template technical lesson",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "flatironschool",
+  "license": "Included in Repo",
+  "devDependencies": {
+  }
+}
